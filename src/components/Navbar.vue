@@ -14,15 +14,20 @@ export default {
     name: 'Navbar',
     data() {
         return{
-            
+
         }
     }
 }
 </script>
 
 <style scoped>
-    nav li{
-        list-style: none;
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a{
+        color: #42b983;
     }
 
 </style>
