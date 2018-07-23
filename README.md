@@ -1,6 +1,6 @@
-# routing
+# VueJS Routing
 
-> A Vue.js project
+> A Vue.js project that focuses on practice with the VueJS router
 
 ## Build Setup
 
