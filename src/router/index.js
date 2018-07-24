@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import About from '@/components/About';
 import Why from '@/components/Why';
 import Contact from '@/components/Contact';
+import ViewProfile from '@/components/ViewProfile';
 
 
 Vue.use(Router)
@@ -29,6 +30,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/profile/:user_id',
+      name: 'ViewProfile',
+      component: ViewProfile
     }
   ]
 })
