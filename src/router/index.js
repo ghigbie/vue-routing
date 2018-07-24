@@ -39,7 +39,7 @@ export default new Router({
       component: ViewProfile
     },
     {
-      path: '*',
+      path: '/*',
       name: 'NotFound',
       component: NotFound
     }
