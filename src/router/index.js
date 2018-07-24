@@ -11,6 +11,7 @@ import NotFound from '@/components/NotFound';
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history', //This will allow the # symbol from the url to be moved
   routes: [
     {
       path: '/',
