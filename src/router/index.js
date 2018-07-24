@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Why from '@/components/Why';
 import Contact from '@/components/Contact';
 import ViewProfile from '@/components/ViewProfile';
+import Comments from '@/components/Comments';
 import NotFound from '@/components/NotFound';
 
 
@@ -37,6 +38,11 @@ export default new Router({
       path: '/profile/:user_id',
       name: 'ViewProfile',
       component: ViewProfile
+    },
+    {
+      path: '/comments/:comment_id',
+      name: 'Comments',
+      component: Comments
     },
     {
       path: '/*',
