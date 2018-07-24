@@ -20,8 +20,8 @@
             <li v-for="(id, index) in commentIds"
                 :key="index">
                 <router-link :to="{ name: 'Comments', params: { comment_id: id }}">
-                    <span>Comment {{ id }}<span>
-                <router-link>
+                    <span>Comment {{ id }}</span>
+                </router-link>
             </li>
         </ul>
         <h2>Navigation Controls</h2>
