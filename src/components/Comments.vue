@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         updateCommentId(){
-            this.commentId = this.$route.params.commentId
+            this.commentId = this.$route.params.comment_id
         }
     },
     watch: {
