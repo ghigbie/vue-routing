@@ -18,6 +18,10 @@
         <h2>Navigation Controls</h2>
         <ul>
             <li>
+                <button @click="goBack">Go Back</button>
+                <button @click="goForward">Go Forward</button>
+            </li>
+            <li>
                 <button @click="goHome">Redirect to Home</button>
             </li>
             <li>
