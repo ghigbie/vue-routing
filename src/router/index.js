@@ -6,6 +6,7 @@ import Why from '@/components/Why';
 import Contact from '@/components/Contact';
 import ViewProfile from '@/components/ViewProfile';
 import Comments from '@/components/Comments';
+import UserStories from '@/components/UserStories';
 import NotFound from '@/components/NotFound';
 
 
@@ -43,6 +44,11 @@ export default new Router({
       path: '/comments/:comment_id',
       name: 'Comments',
       component: Comments
+    },
+    {
+      path: '/user-stories/:story_id',
+      name: 'UserStories',
+      component: UserStories
     },
     {
       path: '/*',
