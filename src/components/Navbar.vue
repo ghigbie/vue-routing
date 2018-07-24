@@ -15,6 +15,18 @@
                 </router-link>
             </li>
         </ul>
+        <h2>Navigation Controls</h2>
+        <ul>
+            <li>
+                <button @click="goHome">Redirect to Home</button>
+            </li>
+            <li>
+                <button @click="goAbout">Redirect to About</button>
+            </li>
+            <li>
+                <button @click="goWhy">Redirect to Why?</button>
+            </li>
+        </ul>
     </nav>
     
 </template>
@@ -25,6 +37,11 @@ export default {
     data() {
         return{
             userIds: ['1', '2', '3', '4']
+        }
+    },
+    methods: {
+        goHome(){
+            this.$router.push({ name: 'Home' });
         }
     }
 }
