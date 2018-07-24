@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Why from '@/components/Why';
 import Contact from '@/components/Contact';
 import ViewProfile from '@/components/ViewProfile';
+import NotFound from '@/components/NotFound';
 
 
 Vue.use(Router)
@@ -35,6 +36,11 @@ export default new Router({
       path: '/profile/:user_id',
       name: 'ViewProfile',
       component: ViewProfile
+    },
+    {
+      path: '*',
+      name: 'Not Found',
+      component: NotFound
     }
   ]
 })

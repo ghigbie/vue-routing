@@ -1,6 +1,6 @@
 <template>
     <div class="not-found">
-        <h1>This page is not found</h1>
+        <h1>This page is not found...You broke something</h1>
     </div>
 </template>
 
