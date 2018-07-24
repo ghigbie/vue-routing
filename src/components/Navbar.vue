@@ -78,7 +78,7 @@ export default {
             this.$router.go(-1);
         },
         goForward(){
-            this.$router.go(+1);
+            this.$router.go(1);
         },
         goHome(){
             this.$router.push({ name: 'Home' });
