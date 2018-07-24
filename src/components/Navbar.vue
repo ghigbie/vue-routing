@@ -59,7 +59,7 @@ export default {
             this.$router.push({ name: 'Contact' });
         },
         goWild(){
-            this.$router.push({ name: '*' });
+            this.$router.push({ name: 'NotFound' });
         }
     }
 }
