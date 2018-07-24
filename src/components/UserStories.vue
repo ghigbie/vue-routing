@@ -1,6 +1,6 @@
 <template>
     <div class="user-stories">
-        <h1>User Stories {{ id }}</h1>
+        <h1>User Stories {{ storyId }}</h1>
     </div>
 </template>
 
