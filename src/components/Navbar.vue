@@ -15,6 +15,15 @@
                 </router-link>
             </li>
         </ul>
+        <h2>Comments</h2>
+        <ul>
+            <li v-for="(id, index) in commentIds"
+                :key="index">
+                <router-link :to="{ name: 'Comments', params: { comment_id: id }}">
+                    <span>Comment {{ id }}<span>
+                <router-link>
+            </li>
+        </ul>
         <h2>Navigation Controls</h2>
         <ul>
             <li>
@@ -46,7 +55,8 @@ export default {
     name: 'Navbar',
     data() {
         return{
-            userIds: ['1', '2', '3', '4']
+            userIds: ['1', '2', '3', '4'],
+            commentIds: ['1', '2', '3', '4']
         }
     },
     methods: {
