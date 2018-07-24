@@ -26,6 +26,12 @@
             <li>
                 <button @click="goWhy">Redirect to Why?</button>
             </li>
+            <li>
+                <button @click="goContact">Redirect to Contact</button>
+            </li>
+            <li>
+                <button @click="goWild">Redirect to Wild</button>
+            </li>
         </ul>
     </nav>
     
