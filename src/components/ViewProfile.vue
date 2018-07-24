@@ -10,8 +10,16 @@ export default {
     name: 'ViewProfile',
     data() {
         return{
-            userId: this.$route
+            userId: this.$route.params.user_id
         };
+    },
+    methods: {
+        updateId(){
+            this.userId = this.$route.params.user_id;
+        }
+    },
+    watch: {
+        $route: 'updateId'
     }
 }
 </script>
