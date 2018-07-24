@@ -94,7 +94,7 @@ export default {
         },
         goOtherStuff(){
             this.$router.push({ name: 'OtherStuff' })
-        }
+        },
         goWild(){
             this.$router.push({ name: 'NotFound' });
         }
