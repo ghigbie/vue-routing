@@ -5,6 +5,7 @@
             <li><router-link :to="{ name: 'About' }">About</router-link></li>
             <li><router-link :to="{ name: 'Why' }">Why us?</router-link></li>
             <li><router-link :to="{ name: 'Contact' }">Contact Us</router-link></li>
+            <li><router-link :to="{ name: 'Other' }">Other Stuff</router-link></li>
         </ul>
         <h2>User Profiles</h2>
         <ul>
@@ -52,6 +53,9 @@
                 <button @click="goContact">Redirect to Contact</button>
             </li>
             <li>
+                <button @click="goOtherStuff">Redirect to Other</button>
+            </li>
+            <li>
                 <button @click="goWild">Redirect to Wild</button>
             </li>
         </ul>
@@ -88,6 +92,9 @@ export default {
         goContact(){
             this.$router.push({ name: 'Contact' });
         },
+        goOtherStuff(){
+            this.$router.push({ name: 'OtherStuff' })
+        }
         goWild(){
             this.$router.push({ name: 'NotFound' });
         }
