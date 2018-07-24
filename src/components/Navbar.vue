@@ -50,6 +50,12 @@ export default {
         }
     },
     methods: {
+        goBack(){
+            this.$router.go(-1);
+        },
+        goForward(){
+            this.$router.go(+1);
+        },
         goHome(){
             this.$router.push({ name: 'Home' });
         },
