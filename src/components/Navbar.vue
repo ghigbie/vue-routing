@@ -10,7 +10,7 @@
         <ul>
             <li v-for="(id, index) in userIds"
                 :key="index">
-                <router-link to="{ name: ViewProfile', params: { user_id: id }}">
+                <router-link :to="{ name: 'ViewProfile', params: { user_id: id }}">
                     <span>View Profile {{ id }}</span>
                 </router-link>
             </li>
