@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import About from '@/components/About';
 import Why from '@/components/Why';
 import Contact from '@/components/Contact';
+import OtherStuff from '@/components/OtherStuff';
 import ViewProfile from '@/components/ViewProfile';
 import Comments from '@/components/Comments';
 import UserStories from '@/components/UserStories';
@@ -34,6 +35,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/other-stuff',
+      name: 'OtherStuff',
+      component: OtherStuff
     },
     {
       path: '/profile/:user_id',
