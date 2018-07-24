@@ -5,7 +5,7 @@
             <li><router-link :to="{ name: 'About' }">About</router-link></li>
             <li><router-link :to="{ name: 'Why' }">Why us?</router-link></li>
             <li><router-link :to="{ name: 'Contact' }">Contact Us</router-link></li>
-            <li><router-link :to="{ name: 'Other' }">Other Stuff</router-link></li>
+            <li><router-link :to="{ name: 'OtherStuff' }">Other Stuff</router-link></li>
         </ul>
         <h2>User Profiles</h2>
         <ul>
