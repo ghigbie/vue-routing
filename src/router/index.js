@@ -46,7 +46,7 @@ export default new Router({
       component: Comments
     },
     {
-      path: '/stories/:story_id',
+      path: '/user-stories/:story_id',
       name: 'UserStories',
       component: UserStories
     },

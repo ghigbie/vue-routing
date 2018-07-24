@@ -28,7 +28,7 @@
         <ul>
             <li v-for="(id, index) in storyIds"
                 :key="index">
-                <router-link :to="{ name: 'UserStories', parmas: { story_id: id }}">
+                <router-link :to="{ name: 'UserStories', params: { story_id: id }}">
                     <span>Story {{ id }}</span>
                 </router-link>
             </li>
