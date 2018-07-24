@@ -9,8 +9,16 @@ export default {
     name: 'UserStories',
     data(){
         return{
-            storyId: ['1', '2', '3', '5']
+            storyId: this.$route.params.story_id
         };
+    },
+    methods: {
+        updateStoryId(){
+            this.storyId = this.$route.params.story_id
+        }
+    },
+    watch: {
+        $route: 'updateStoryId'
     }
 }
 </script>

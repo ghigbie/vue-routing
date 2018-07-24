@@ -24,6 +24,15 @@
                 </router-link>
             </li>
         </ul>
+        <h2>User Stories</h2>
+        <ul>
+            <li v-for="(id, index) in stoyIds"
+                :key="index">
+                <router-link to="{ name: 'UserStories', parmas: { story_id: id}}">
+                    <span>Story {{ id }}</span>
+                </router-link>
+            </li>
+        </ul>
         <h2>Navigation Controls</h2>
         <ul>
             <li>
@@ -56,7 +65,8 @@ export default {
     data() {
         return{
             userIds: ['1', '2', '3', '4'],
-            commentIds: ['1', '2', '3', '4']
+            commentIds: ['1', '2', '3', '4'],
+            storyIds: ['1', '2', '3', '4']
         }
     },
     methods: {
