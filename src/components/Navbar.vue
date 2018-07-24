@@ -42,6 +42,18 @@ export default {
     methods: {
         goHome(){
             this.$router.push({ name: 'Home' });
+        },
+        goAbout(){
+            this.$router.push({ name: 'About' });
+        },
+        goWhy(){
+            this.$router.push({ name: 'Why' });
+        },
+        goContact(){
+            this.$router.push({ name: 'Contact' });
+        },
+        goWild(){
+            this.$router.push({ name: '*' });
         }
     }
 }
